@@ -38,10 +38,10 @@ public class MainActivity extends AppCompatActivity
                             Log.d(TAG, "Vuelve cancelado");
                             break;
 
-                        case MainActivity3.CODIGO_TEXTOA3:
+                        case MainActivity3.CODIGO_TEXTO:
                             Log.d(TAG, "Vuelve con codigo, buscar intent");
                             Intent intent = result.getData();
-                            String mensaje= intent.getStringExtra(MainActivity2.TEXTO);
+                            String mensaje= intent.getStringExtra(MainActivity3.MESSAGE_TEXTO);
                             resultadoA1.setText(mensaje);
                             resultadoA1.setTextColor(Color.BLACK);
                             resultadoA1.setTextSize(30);
@@ -52,12 +52,12 @@ public class MainActivity extends AppCompatActivity
                             resultadoA1.setText("");
                             textoA1.setText("");
                             break;
-
-                       /* case MainActivity3.CODIGO_NUEVOA3:
+                        case MainActivity3.CODIGO_NUEVO:
                             Log.d(TAG, "Limpiar texto");
                             resultadoA1.setText("");
                             textoA1.setText("");
-                            break;  */
+                            break;
+
                     }
                 }
             }

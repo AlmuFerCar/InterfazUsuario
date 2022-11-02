@@ -14,9 +14,11 @@ public class MainActivity3 extends AppCompatActivity {
     TextView resultadoA3;
     Button enviarA1, volver, nuevoA1;
     EditText textoA3;
-    static final String TEXTOA3="TEXTO DE A3";
-    static final int CODIGO_TEXTOA3=10;
-    static final int CODIGO_NUEVOA3=15;
+    static final String TEXTO="TEXTO DE A3";
+    static final int CODIGO_TEXTO=10;
+    static final int CODIGO_NUEVO=50;
+    public static final int CODIGO_A=70;
+    public static final String MESSAGE_TEXTO="Message";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +47,7 @@ public class MainActivity3 extends AppCompatActivity {
                 enviarTextoA1();
             }
         });
+
         //LIMPIAMOS LA ACTIVIDAD A1
         nuevoA1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,26 +55,29 @@ public class MainActivity3 extends AppCompatActivity {
                 nuevaActividad1();
             }
         });
+
     }
+
+
 
     public void volver()
     {
         MainActivity3.super.onBackPressed();
     }
-    public void enviarTextoA1()
-    {
-        String dato3=textoA3.getText().toString();
-        Intent intent = new Intent( this, MainActivity3.class);
-        intent.putExtra(TEXTOA3, dato3);
-        setResult(CODIGO_TEXTOA3, intent);
+
+    public void enviarTextoA1(){
+        Intent intent=new Intent(this,MainActivity.class);
+        String dato = textoA3.getText().toString();
+        intent.putExtra(MESSAGE_TEXTO, dato);
+        setResult(CODIGO_A,intent);
         MainActivity3.super.onBackPressed();
     }
 
     public void nuevaActividad1()
     {
         Intent intent = new Intent( this, MainActivity.class);
-        intent.putExtra(TEXTOA3, "Voy de vuelta a A1 para limpiar");
-        setResult(CODIGO_NUEVOA3, intent);
+        intent.putExtra(TEXTO, "Voy de vuelta a A1 para limpiar");
+        setResult(CODIGO_NUEVO, intent);
         MainActivity3.super.onBackPressed();
     }
 }
