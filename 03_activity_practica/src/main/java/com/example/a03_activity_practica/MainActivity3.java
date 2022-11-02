@@ -30,7 +30,7 @@ public class MainActivity3 extends AppCompatActivity {
         textoA3=findViewById(R.id.textoA3);
 
         Intent intent = getIntent();
-        String mensaje= intent.getStringExtra(MainActivity2.TEXTO);
+        String mensaje= intent.getStringExtra(MainActivity2.MESSAGE_TEXTO);
         resultadoA3.setText(mensaje);
         resultadoA3.setTextColor(Color.BLACK);
         resultadoA3.setTextSize(30);
