@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"> <!--IMPRESCINDIBLE-->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"><!--IMPRESCINDIBLE-->
+
+        <Button
+            android:id="@+id/Boton1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="BOTÓN 1"
+            android:backgroundTint="@color/white"/>
+        <!---->
+        <Button
+            android:id="@+id/Boton2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/red"
+            android:text="BOTÓN 2"/>
+
+        <Button
+            android:id="@+id/Boton3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="BOTÓN 3"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"> <!--IMPRESCINDIBLE-->
+
+        <Button
+            android:id="@+id/Boton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BOTÓN 4"
+            android:backgroundTint="@color/purple_700"/>
+        <!---->
+        <Button
+            android:id="@+id/Boton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="BOTÓN 5"/>
+
+        <Button
+            android:id="@+id/Boton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BOTÓN 6"
+            android:backgroundTint="@color/purple_700"/>
+
+    </LinearLayout>
+
+</LinearLayout>

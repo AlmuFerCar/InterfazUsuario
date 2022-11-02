@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/buttonreset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/boton0"
+            android:backgroundTint="@color/teal_700" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/informacion"
+            android:textSize="200dp"
+            android:textColor="@color/gris"
+            android:backgroundTint="@android:color/transparent"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="10">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/boton2"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"/>
+        <Button
+            android:id="@+id/buttonmenos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/boton1"
+            android:backgroundTint="@color/teal_700"/>
+    </LinearLayout>
+</LinearLayout>

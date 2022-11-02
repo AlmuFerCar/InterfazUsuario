@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="valores">
+        <item>ESO</item>
+        <item>Bachillerato</item>
+        <item>Formación Profesional</item>
+        <item>Universitaria</item>
+    </string-array>
+    <string-array name="valoreswork">
+        <item>Estudiante</item>
+        <item>Funcionario</item>
+        <item>Autonomo</item>
+        <item>Trabajador por cuenta ajena</item>
+    </string-array>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:rowCount="3"
+    android:columnCount="4"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:useDefaultMargins="true">
+
+    <Button
+        android:id="@+id/buttonreset"
+        android:text="hola"
+        android:backgroundTint="@color/teal_700"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/buttonreset"
+        android:text="bee"
+        android:backgroundTint="@color/teal_700"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowSpan="2"
+        android:layout_gravity="fill"/>
+    <Button
+        android:id="@+id/buttonreset"
+        android:text="cee"
+        android:backgroundTint="@color/teal_700"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonreset"
+        android:text="deeee"
+        android:backgroundTint="@color/teal_700"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonreset"
+        android:text="peee"
+        android:backgroundTint="@color/teal_700"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonreset"
+        android:text="seee"
+        android:backgroundTint="@color/teal_700"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonreset"
+        android:text="teee"
+        android:backgroundTint="@color/teal_700"
+        android:layout_rowSpan="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"/>
+
+    <Button
+        android:id="@+id/buttonreset"
+        android:text="@string/boton0"
+        android:backgroundTint="@color/teal_700"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"/>
+
+</GridLayout>
+

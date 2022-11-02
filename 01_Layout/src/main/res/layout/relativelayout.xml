@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/padre1">
+
+        <Button
+            android:id="@+id/hijo1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/red"
+            android:text="deeee" />
+    <Button
+        android:id="@+id/hijo2"
+        android:text="bee"
+        android:backgroundTint="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_toLeftOf="@id/hijo1"
+        />
+
+        <Button
+            android:id="@+id/buttonreset"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="@color/purple_700"
+            android:text="cee"
+            android:layout_toLeftOf="@id/hijo2"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/padre1"
+        android:id="@+id/padre2">
+
+        <TextView
+            android:id="@+id/texto"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_alignParentLeft="true"
+            android:text="CENTRO"
+            android:textAlignment="center"
+            android:textSize="60dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/padre2"
+        android:id="@+id/padre3">
+
+        <Button
+            android:id="@+id/buttonreset"
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="@color/teal_700"
+            android:text="peee" />
+
+        <Button
+            android:id="@+id/buttonreset"
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/gris"
+            android:text="seee" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

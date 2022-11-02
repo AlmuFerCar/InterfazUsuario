@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/titulo"
+        android:textAlignment="center"
+
+
+        />
+    <CheckBox
+        android:id="@+id/tenis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:checked="false"
+        android:text="@string/opcion1"
+        android:layout_weight="1"/>
+
+    <CheckBox
+        android:id="@+id/ajedrez"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:checked="false"
+        android:text="@string/opcion2"
+        android:layout_weight="1"/>
+    <CheckBox
+        android:id="@+id/baloncesto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:checked="false"
+        android:text="@string/opcion3"
+        android:layout_weight="1"/>
+    <CheckBox
+        android:id="@+id/natatacion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:checked="false"
+        android:text="@string/opcion4"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/textobox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">02_controles_basicos</string>
+    <string name="nombre">NOMBRE:</string>
+    <string name="nombre2">Escriba aqui su nombre!</string>
+    <string name="correo">EMAIL:</string>
+    <string name="correo2">Escriba aqui su correo</string>
+    <string name="edad">Edad:</string>
+    <string name="edad2">Escriba aqui su edad</string>
+    <string name="telefono">TELEFONO:</string>
+    <string name="telefono2">Escriba aqui su telefono</string>
+    <string name="boton">ACEPTAR</string>
+    <string name="botonon">ON</string>
+    <string name="botonoff">OFF</string>
+    <string name="botoncheck">Acepta las condiciones</string>
+    <string name="opcion1">TENIS</string>
+    <string name="opcion2">AJEDREZ</string>
+    <string name="opcion3">BALONCESTO</string>
+    <string name="opcion4">NATACION</string>
+    <string name="titulo">Marque sus preferencias (mas de una)</string>
+    <string name="opcionv">Verdadero</string>
+    <string name="opcionf">Falso</string>
+    <string name="textopcion">He marcado la opcion</string>
+    <string name="spinner">Nivel de estudios</string>
+    <string name="sexof">Femenino</string>
+    <string name="sexom">Masculino</string>
+    <string name="sexootro">No binario</string>
+    <string name="sexo">Sexo:</string>
+    <string name="profesion">Profesión:</string>
+    <string name="hobbies">Hobbies:</string>
+    <string name="opciona">Baloncesto</string>
+    <string name="opcionb">Malabares</string>
+    <string name="opcionc">Teatro</string>
+    <string name="send">ENVIAR</string>
+    <string name="clear">LIMPIAR</string>
+    <string name="correo_v2">Email:</string>
+    <string name="nombre_v2">Nombre:</string>
+</resources>

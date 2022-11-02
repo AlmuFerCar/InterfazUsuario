@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">InterfazUsuario</string>
+    <string name="texto">Esta es mi aplicación: Contador</string>
+    <string name="informacion">0</string>
+    <string name="boton">BOTÓN</string>
+    <string name="boton0">RESET</string>
+    <string name="boton1">-</string>
+    <string name="boton2">+</string>
+    <string name="botonmulti">x</string>
+    <string name="botondivi">/</string>
+    <string name="botonigual">=</string>
+    <string name="botoncero">0</string>
+    <string name="botonuno">1</string>
+    <string name="botondos">2</string>
+    <string name="botontres">3</string>
+    <string name="botoncuatro">4</string>
+    <string name="botoncinco">5</string>
+    <string name="botonseis">6</string>
+    <string name="botonsiete">7</string>
+    <string name="botonocho">8</string>
+    <string name="botonnueve">9</string>
+    <string name="info">El resultado es: </string>
+</resources>

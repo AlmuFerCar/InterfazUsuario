@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">03_activity_practica</string>
+    <string name="send">ENVIARA2</string>
+    <string name="send_v2">ENVIAR \n A3</string>
+    <string name="send_v3">ENVIAR \n A1</string>
+    <string name="salir">SALIR</string>
+    <string name="texto_nombre">Escriba su mensaje para A2</string>
+    <string name="texto_mensaje">Escriba el texto para enviar a \n A3</string>
+    <string name="texto_mensajeA3">Escriba el texto para enviar a \n A1</string>
+    <string name="new_a1">Nueva A1</string>
+    <string name="volver">VOLVER</string>
+    <string name="tituloA1">Página A1</string>
+    <string name="tituloA2">Página A2</string>
+    <string name="tituloA3">Página A3</string>
+</resources>

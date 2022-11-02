@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "InterfazUsuario"
+include ':01_Layout'
+include ':02_controles_basicos'
+include ':03_activity'
+include ':03_activity_persona'
+include ':03_activity_persona2'
+include ':03_activity_practica'
+include ':04_recyclerview'
+include ':04_material_design'
