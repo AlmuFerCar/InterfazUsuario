@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity
                             resultadoA1.setText(mensaje);
                             resultadoA1.setTextColor(Color.BLACK);
                             resultadoA1.setTextSize(30);
+                            textoA1.setText("");
                             break;
 
                         case MainActivity2.CODIGO_NUEVO:
