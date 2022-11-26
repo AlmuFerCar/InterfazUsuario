@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -28,6 +29,8 @@ public class MainActivity5 extends AppCompatActivity {
     CheckBox op4, op5, op6;
     Button boton_send, boton_clear;
     int seleccion=0;
+    String aux1="",aux2="", aux3="";
+    int i=0;
 
 
     @Override
@@ -66,47 +69,110 @@ public class MainActivity5 extends AppCompatActivity {
             }
         });
 
+        op4.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b)
+                {
+                    aux1=op4.getText().toString();
+                }
+                else
+                {
+                    aux1=" ";
+                }
+                i++;
+            }
+        });
+        op5.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b)
+                {
+                    aux2=op5.getText().toString();
+                    //cadena=cadena+(" "+op5.getText()+" ");
+                }
+                else
+                {
+                    aux2=" ";
+                }
+                i++;
+            }
+        });
+        op6.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b)
+                {
+                    aux3=op6.getText().toString();
+                    //cadena=cadena+(" "+op6.getText()+" ");
+                }
+                else
+                {
+                    aux3=" ";
+                }
+            }
+        });
+
+        grupo.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                seleccion=grupo.getCheckedRadioButtonId();
+
+                switch (seleccion)
+                {
+                    case R.id.mujer:
+                    {
+                        dato=op1.getText().toString();
+                        break;
+                    }
+                    case R.id.hombre:
+                    {
+                        dato=op2.getText().toString();
+                        break;
+                    }
+                    case R.id.otro:
+                    {
+                        dato=op3.getText().toString();
+                        break;
+                    }
+                }
+            }
+        });
         boton_send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                resultado.setText("Tu nombres es "+nombre.getText()+" con edad "+edad.getText()+" y tu sexo es ");
-
-                grupo.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-                    @Override
-                    public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                        seleccion=grupo.getCheckedRadioButtonId();
-
-                        switch (seleccion)
-                        {
-                            case R.id.mujer:
-                            {
-                                dato=op1.getText().toString();
-                                break;
-                            }
-                            case R.id.hombre:
-                            {
-                                dato=op2.getText().toString();
-                                break;
-                            }
-                            case R.id.otro:
-                            {
-                                dato=op3.getText().toString();
-                                break;
-                            }
-                        }
-                    }
-                });
                 resultado.setText("Tu nombres es "+nombre.getText()+" con edad "+edad.getText()+" y tu sexo es "+dato);
                 resultado.append("\n");
                 valor=spinner.getSelectedItem().toString();
                 resultado.append("Tu profesion es: "+valor);
-                resultado.setTextSize(30);
+                resultado.append("\n");
+                resultado.append("Tus hobbies son: "+aux1+" "+aux2+" "+aux3);
+                resultado.setTextSize(20);
 
                 InputMethodManager imm= (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(nombre.getWindowToken(),0);//PARA QUE EL TECLADO SE ESCONDA
 
             }
         });
+        boton_clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                resultado.setText("");
+                nombre.setText("");
+                edad.setText("");
+                grupo.clearCheck();
+                spinner.setSelection(0);
+                op4.setChecked(false);
+                op5.setChecked(false);
+                op6.setChecked(false);
+
+                InputMethodManager imm= (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(nombre.getWindowToken(),0);//PARA QUE EL TECLADO SE ESCONDA
+
+            }
+        });
+
+
 
     }
 

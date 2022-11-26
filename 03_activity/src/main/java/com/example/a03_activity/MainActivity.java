@@ -2,10 +2,12 @@ package com.example.a03_activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -142,6 +144,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 paginaSiguiente();
+            }
+        });
+
+        boton_clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nombre.setText("");
+                edad.setText("");
+                grupo.clearCheck();
+                spinner.setSelection(0);
+                op4.setChecked(false);
+                op5.setChecked(false);
+                op6.setChecked(false);
+
+                InputMethodManager imm= (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(nombre.getWindowToken(),0);//PARA QUE EL TECLADO SE ESCONDA
+
             }
         });
     }
