@@ -73,6 +73,12 @@ public class MainActivity extends AppCompatActivity
         resultadoA1=findViewById(R.id.resultadoA1);
         botonSalir= findViewById(R.id.botonSalir);
 
+        botonSalir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         botonA1.setOnClickListener(new View.OnClickListener()
         {
